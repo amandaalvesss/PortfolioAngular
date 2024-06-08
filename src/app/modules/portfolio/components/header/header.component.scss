@@ -1,0 +1,199 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin: 0; /* Certifique-se de que o corpo não tenha margens */
+    display: flex;
+    align-items: center;
+    background-color: #653fa5;
+
+
+}
+
+header {
+    background: #653fa5;
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; /* Assegura que o nav ocupa toda a largura */
+    box-sizing: border-box;
+}
+
+.menuVisible {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 10px;
+
+}
+
+.menuVisible a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    font-family: "Reddit Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.menuVisible a:hover {
+    color: #f3d13c;
+}
+
+.container-01{
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.title-left h1{
+    font-size: 4rem;
+    color:#fff;
+    margin-left: 15px;
+}
+
+.title-left h2{
+    font-size: 3rem;
+    color:#fff;
+    margin-left: 15px;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links{
+    display: flex;
+    margin-left: 15px;
+
+}
+.social-links a {
+    margin-right: 10px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.menuInvisible {
+    display: none;
+}
+  
+  .menuVisible {
+    display: flex;
+}
+
+@keyframes button-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .social-links a img, .social-links button {
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links a img:hover, .social-links button:hover {
+    animation: button-bounce 0.6s;
+  }
+   
+  .home {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .left-section > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards ease-in-out;
+  }
+  
+  .left-section .title-left {
+    animation-delay: 0.5s;
+  }
+  
+  .left-section .social-links {
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  @media (max-width: 750px) {
+    .title-left h1{
+        font-size: 3rem;
+
+    }
+    .title-left h2{
+        font-size: 2rem;
+
+    }
+    .home{
+        margin-bottom: 70%;
+    }
+
+    .menuInvisible {
+      display: block;
+      margin-right: 15px;
+      margin-bottom: 20px;
+    }
+  
+    .menuVisible {
+      display: none;
+    }
+
+    .photo {
+        display: none;
+    }
+    
+    @import "https://fonts.googleapis.com/css?family=Montserrat";
+    .menu{width:160px;margin:60px auto 0;cursor:pointer;font-family:"Reddit Sans", sans-serif}
+    .title{width:100%;box-sizing:border-box;background:#fff;padding:14px;border-radius:4px;position:relative;box-shadow:0 0 40px -10px #000;color:#505050}
+    span{float:right;font-size:18px!important}
+    .dropdown{width:100%;background:#fff;border-radius:4px;box-shadow:0 0 40px -10px #000;color:#505050;margin-top:24px;max-height:0;overflow:hidden;transition:all .5s; list-style-type: none;}
+    .down{max-height:150px}
+    .arrow{border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid #fff;position:absolute;right:20px;bottom:-24px;display:none}
+    .arrow.gone{display:block}
+    li a{padding:10px 19px;margin:0;transition:all .1s}
+    li a:hover{background:#FFDE59;width:160px;-webkit-transform:scale(1.05);color:rgba(15, 8, 8, 0.8);box-shadow:0 0 30px -10px #000}
+  }
+
+  
+  

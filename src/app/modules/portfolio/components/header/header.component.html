@@ -1,0 +1,60 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+<header>
+  <nav>
+    <div class="menuInvisible">
+      <div class="menu">
+        <div class="title" (click)="toggleDropdown()"><strong>Menu</strong>
+          <span class="fa fa-bars"></span>
+          <div class="arrow"></div>
+        </div>
+        <div class="dropdown">
+          <li style="margin-top: 5px; margin-bottom: 5px;"><a href="#sobre"><strong>Sobre</strong></a></li>
+          <li style="margin-top: 5px; margin-bottom: 5px;"><a href="#skills"><strong>Skills</strong></a></li>
+          <li style="margin-top: 5px; margin-bottom: 5px;"><a href="#projetos"><strong>Projetos</strong></a></li>
+          <li style="margin-top: 5px; margin-bottom: 5px;"><a href="#contato"><strong>Contato</strong></a></li>
+        </div>
+      </div>
+    </div>
+    <ul class="menuVisible">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<br>
+
+<body>
+  <article class="home">
+    <div class="left-section">
+      <div class="title-left">
+        <h1 style="color: #FFDE59;">Amanda Alves</h1>
+        <h2>Desenvolvedora Fullstack</h2>
+      </div>
+      <br>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/amanda-alves-615573144/" target="_blank">
+          <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="30px" height="30px">
+        </a>
+        <a href="https://github.com/amandaalvesss" target="_blank">
+          <img src="assets/icons/github (1).svg" alt="GitHub" width="30px" height="30px">
+        </a>
+        <a href="assets/pdf/curriculo.pdf" download>
+          <button mat-raised-button>Download CV</button>
+        </a>
+
+      </div>
+    </div>
+     
+  </article>
+
+</body>

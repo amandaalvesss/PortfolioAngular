@@ -1,0 +1,101 @@
+h1{
+    font-size: 1.7rem;
+    margin-left: 35px;
+    color:white;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#contato {
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    background-color: #653fa5;
+}
+    
+
+
+.container-contact{
+    background-color: #FFDE59;
+    width: 90%;
+    min-height: 220px;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.icon-block {
+    text-align: center;
+    width: 100px;
+    width: 150px;
+}
+
+.icon-block a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-block img {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+.legend {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.link-text {
+    margin-top: 2px;
+    font-size: 12px;
+    color: black;
+}
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #653fa5;
+    color:aliceblue;
+    width: 100%;
+}
+
+@keyframes icon-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .icon-container .icon-block img {
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-container .icon-block img:hover {
+    animation: icon-bounce 0.6s;
+  }
+  
+
+@media (max-width: 750px) {
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+    }
+}
